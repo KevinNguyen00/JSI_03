@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="comment.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="logo d-flex">
+                    <h1 style="letter-spacing: 2px; color: rgb(177, 30, 30)">PENNY</h1>
+                    <h1 style="letter-spacing: 2px; color: rgb(255, 255, 255)">WISE 2</h1>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a class="hover" href="/Homepage.html">Home</a></li>
+                        <li><a class="hover" href="#">About</a></li>
+                        <li><a class="hover" href="#">Service</a></li>
+                        <li><a class="hover" href="#">Contact</a></li>
+                        <li><a class="hover" href="review.html">Review</a></li>
+                    </ul>
+                </div>
+                <div class="attendance d-flex">
+                    <div class="dropdown hidden">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="nguoidung" data-bs-toggle="dropdown" aria-expanded="false">Username</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="Profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" id="signout" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                    <a href="register.html" class="btn joinus">Join Us</a>
+                </div>
+            </div>
+        </header>
+        <main class="d-flex justify-content-center">
+            <div class="parental-container d-flex flex-column justify-content-center">
+                <div class="exit d-flex justify-content-center">
+                    <img style="width: 100px" src="/img/imgbin_it-logo-png.png" alt="" />
+                    <a href="review.html" class="btn btnexit">x</a>
+                </div>
+                <div class="form-container d-flex justify-content-center">
+                    <form class="upload-form">
+                        <div class="mb-3">
+                            <label style="color: rgb(246, 248, 157)" for="exampleFormControlInput1" class="form-label">URL</label>
+                            <input type="url" class="form-control" id="Input-url" placeholder="Upload your image" />
+                        </div>
+                        <div class="mb-3">
+                            <label style="color: rgb(246, 248, 157)" for="exampleFormControlTextarea1" class="form-label"> Experience</label>
+                            <textarea class="form-control" id="Input-content" rows="3"></textarea>
+                        </div>
+                        <div class="but">
+                            <button type="button" id="Postbtn" class="btn btn-outline-success">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script defer src="JS/config.js"></script>
+        <script defer src="/JS/check.js"></script>
+        <script src="/JS/loginwithprovider.js"></script>
+        <script src="/JS/comment.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

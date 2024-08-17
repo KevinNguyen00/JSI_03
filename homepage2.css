@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation */
+.navigation {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 2%;
+    z-index: 1000000;
+}
+
+.logo h1 {
+    color: transparent;
+    text-decoration: none;
+    font-family: "Candles Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.options {
+    display: flex;
+}
+.options ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+}
+.options ul li {
+    display: inline-block;
+    width: 100px;
+}
+.hover {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.hover:after {
+    content: "";
+    background-color: rgb(224, 6, 6);
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.hover:hover:after {
+    width: 100%;
+}
+#ticket {
+    background-color: transparent;
+    border: solid 1px red;
+    color: red;
+}
+#ticket:hover {
+    border: solid 1px rgb(143, 1, 1);
+    background-color: rgb(144, 4, 4);
+    color: white;
+    animation: TICKET;
+    transition-duration: 0.5s;
+    animation-duration: 4s;
+}
+@keyframes TICKET {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+.joinus {
+    outline: solid 1px rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+}
+.joinus:hover {
+    outline: solid 1px rgb(111, 0, 0);
+    background-color: rgb(125, 5, 5);
+    color: white;
+}
+/* display user */
+.hidden {
+    display: none;
+}
+/*  background */
+.background {
+    background-image: url("https://i.pinimg.com/originals/05/67/80/0567802c596d8eef30bfcb08ce75db8d.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+}
+.chudep {
+    font-family: "Candles Regular", sans-serif;
+    font-size: 60px;
+    -webkit-text-stroke: rgb(253, 253, 253) 1px;
+    color: transparent;
+    background: url("https://png.pngtree.com/background/20210714/original/pngtree-splattered-blood-drops-halloween-background-picture-image_1220392.jpg");
+    -webkit-background-clip: text;
+    background-position: 50% 50%;
+    animation: back 10s linear infinite;
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 10px;
+    }
+}
+.list {
+    padding-top: 8%;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+.small img {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: 1s;
+    animation: lefthook;
+    animation-duration: 1s;
+    scale: 1;
+}
+
+@keyframes lefthook {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.small img:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+.small {
+    display: flex;
+    margin-top: 3%;
+    gap: 10px;
+    justify-content: center;
+}
+.title {
+    padding-top: 10%;
+    padding-left: 5%;
+    color: white;
+    width: 50%;
+    top: 35%;
+    left: 35%;
+    z-index: 111;
+}
+.tren {
+    text-align: left;
+}
+.duoi {
+    width: 90%;
+}
+.alternative-img {
+    position: relative;
+    top: 0%;
+    bottom: 5%;
+    right: 7%;
+    width: fit-content;
+}
+.alternative-img img {
+    width: 45%;
+    z-index: 0;
+    animation-name: creepy;
+}
+/* .alternative-image {
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 70%;
+    width: fit-content;
+}
+.alternative-image img {
+    backdrop-filter: brightness(40%);
+    width: 100%;
+    z-index: 0;
+    animation-name: creepy;
+} */
+@keyframes creepy {
+    from {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+}
+
+/* Second part */

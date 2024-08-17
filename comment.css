@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation {
+    width: 100%;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 2%;
+}
+.logo h1 {
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 25px;
+    color: white;
+}
+.options {
+    display: flex;
+}
+.options ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+}
+.options ul li {
+    display: inline-block;
+    width: 100px;
+}
+.hover {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.hover:after {
+    content: "";
+    background-color: rgb(224, 6, 6);
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.hover:hover::after {
+    width: 100%;
+}
+

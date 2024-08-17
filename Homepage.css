@@ -1,0 +1,677 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation */
+/* navigation */
+.navigation {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 2%;
+    z-index: 1000000;
+}
+
+.logo h1 {
+    color: transparent;
+    text-decoration: none;
+    font-family: "Candles Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.options {
+    display: flex;
+}
+.options ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+}
+.options ul li {
+    display: inline-block;
+    width: 100px;
+}
+.hover {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.hover:after {
+    content: "";
+    background-color: rgb(224, 6, 6);
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.hover:hover:after {
+    width: 100%;
+}
+#ticket {
+    background-color: transparent;
+    border: solid 1px red;
+    color: red;
+}
+#ticket:hover {
+    border: solid 1px rgb(143, 1, 1);
+    background-color: rgb(144, 4, 4);
+    color: white;
+    animation: TICKET;
+    transition-duration: 0.5s;
+    animation-duration: 4s;
+}
+@keyframes TICKET {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+.joinus {
+    outline: solid 1px rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+}
+.joinus:hover {
+    outline: solid 1px rgb(111, 0, 0);
+    background-color: rgb(125, 5, 5);
+    color: white;
+}
+/* display user */
+.hidden {
+    display: none;
+}
+/*  background */
+.background {
+    background-image: url("https://i.pinimg.com/originals/05/67/80/0567802c596d8eef30bfcb08ce75db8d.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+}
+.chudep {
+    font-family: "Candles Regular", sans-serif;
+    font-size: 60px;
+    -webkit-text-stroke: rgb(253, 253, 253) 1px;
+    color: transparent;
+    background: url("https://png.pngtree.com/background/20210714/original/pngtree-splattered-blood-drops-halloween-background-picture-image_1220392.jpg");
+    -webkit-background-clip: text;
+    background-position: 50% 50%;
+    animation: back 10s linear infinite;
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 10px;
+    }
+}
+.list {
+    padding-top: 8%;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+.small img {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: 1s;
+    animation: lefthook;
+    animation-duration: 1s;
+    scale: 1;
+}
+
+@keyframes lefthook {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+.small img:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+.small {
+    display: flex;
+    margin-top: 3%;
+    gap: 10px;
+    justify-content: center;
+}
+.title {
+    padding-top: 10%;
+    padding-left: 5%;
+    color: white;
+    width: 50%;
+    top: 35%;
+    left: 35%;
+    z-index: 111;
+}
+.tren {
+    text-align: left;
+}
+.duoi {
+    width: 90%;
+}
+/* .alternative-image {
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 70%;
+    width: fit-content;
+}
+.alternative-image img {
+    backdrop-filter: brightness(40%);
+    width: 100%;
+    z-index: 0;
+    animation-name: creepy;
+} */
+@keyframes creepy {
+    from {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+}
+
+/* Second part */
+#second-part {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#second-part .titlee a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    z-index: 10000;
+}
+
+#second-part #explore {
+    margin-top: 5%;
+    color: red;
+    outline: solid 1px rgba(158, 0, 0, 0.456);
+}
+#second-part #explore:hover {
+    outline: solid 1px rgb(113, 0, 0);
+    background-color: rgb(129, 2, 2);
+    color: burlywood;
+}
+.inner-container {
+    animation-name: autoshowup;
+    animation-duration: 2s;
+}
+@keyframes autoshowup {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* Experience */
+.experience {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.trenn {
+    width: 75%;
+    padding-left: 10%;
+}
+
+.heading1 img {
+    width: 100px;
+    position: absolute;
+}
+.duoi .nutduoi {
+    outline: solid 1px red;
+    color: red;
+    animation: TICKET;
+    transition-duration: 0.5s;
+    animation-duration: 4s;
+    margin-left: 10%;
+}
+.duoi .nutduoi:hover {
+    outline: solid 1px rgb(147, 3, 3);
+    color: beige;
+    background-color: rgb(144, 4, 4);
+}
+.experience .heading {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.experience .heading .picture img {
+    width: 120px;
+    height: 90%;
+    border-radius: 20px;
+    animation: imgshowup;
+    animation-duration: 2s;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.experience .heading .picture img:hover {
+    box-shadow: rgba(214, 4, 4, 0.3) 0px 23px 38px, rgba(212, 4, 4, 0.429) 10px 15px 12px;
+    opacity: 0.3;
+}
+.experience .heading .picture {
+    padding-right: 5%;
+}
+.duoii {
+    text-align: left;
+}
+@keyframes imgshowup {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+.pricture {
+    position: relative;
+}
+.inside {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.pricture:hover .inside {
+    opacity: 1;
+}
+.picture {
+    display: flex;
+    gap: 25px;
+}
+/* fourth-part */
+
+/* third-part */
+#third-part {
+    background-image: url("https://image.tmdb.org/t/p/original/fJWe8TyNJHCybsbdinj0b562FDT.jpg");
+    background-position: 50% 50%;
+    height: max-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: clip;
+    color: white;
+}
+#third-part img {
+    width: 30%;
+    height: 30%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 3s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+#third-part img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.third-content {
+    background-color: #390202;
+    background-image: linear-gradient(0deg, #390202 0%, #8b0308 100%);
+    height: 196px;
+    width: 400px;
+    padding-left: 2%;
+}
+.third-contentt {
+    background-color: #390202;
+    background-image: linear-gradient(0deg, #390202 0%, #8b0308 100%);
+    height: 170px;
+    width: 400px;
+    padding-left: 2%;
+}
+.third-content2 {
+    background-color: #390202;
+    background-image: linear-gradient(0deg, #390202 0%, #8b0308 100%);
+
+    height: 200px;
+    width: 400px;
+    padding-left: 2%;
+}
+.third-content3 {
+    background-color: #390202;
+    background-image: linear-gradient(0deg, #390202 0%, #8b0308 100%);
+    height: 200px;
+    width: 400px;
+    padding-left: 2%;
+}
+.below {
+    width: max-content;
+    display: flex;
+}
+.below button {
+    border-radius: 25px;
+    transition: 0.3;
+    transform: scale(1);
+}
+.IT {
+    z-index: 0;
+}
+.below i {
+    border-radius: 20px;
+    border: solid 1px rgb(238, 238, 238);
+    width: 35px;
+    padding-top: 3%;
+    height: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.below button:hover {
+    transition: ease-out 0.5s;
+    transform: scale(1.1);
+}
+.below i:hover {
+    background-color: rgb(134, 2, 2);
+    color: white;
+    transition: ease-out 1s;
+}
+
+.heading2 {
+    display: flex;
+    margin-top: 10%;
+}
+.anh img {
+    width: 280px;
+    height: 340px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.anh img:hover {
+    box-shadow: rgba(252, 252, 252, 0.1) 0px 1px 0px, rgba(255, 255, 255, 0.1) 0px 8px 24px, rgba(255, 255, 255, 0.1) 0px 16px 48px;
+}
+.anh {
+    padding-left: 3%;
+    display: flex;
+    gap: 2%;
+    width: fit-content;
+}
+.THEAPPEARANCE {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10%;
+}
+.THEAPPEARANCE h1 {
+    font-size: 17px;
+    color: white;
+}
+.thongtin {
+    width: 80%;
+    padding-right: 3%;
+}
+.indoor p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.585);
+}
+.indoor {
+    padding-left: 10%;
+}
+.knowmore {
+    outline: solid 1px red;
+    color: red;
+    animation-name: TICKET;
+    animation-duration: 3s;
+}
+.knowmore:hover {
+    outline: solid 1px rgb(147, 3, 3);
+    color: beige;
+    background-color: rgb(144, 4, 4);
+}
+.knowmorebtn {
+    display: flex;
+    justify-content: center;
+}
+.source {
+    /* border: solid white 1px; */
+    height: 40%;
+    text-align: center;
+}
+.source img {
+    width: 30%;
+    height: 80%;
+    outline: solid 1px rgb(91, 1, 1);
+    text-align: center;
+    margin-top: 3%;
+    opacity: 0.3;
+}
+.source img:hover {
+    opacity: 1;
+    box-shadow: rgba(235, 5, 5, 0.1) 0px 4px 16px, rgba(228, 3, 3, 0.1) 0px 8px 24px, rgba(152, 15, 0, 0.1) 0px 16px 56px;
+}
+/* Animation*/
+.firstflow {
+    animation: comin;
+    animation-timeline: view();
+}
+@keyframes comin {
+    0% {
+        transform: translateX(-200px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+}
+.secondflow {
+    animation: cominn;
+    animation-timeline: view();
+}
+@keyframes cominn {
+    0% {
+        transform: translateX(300px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+}
+
+.auto-show {
+    animation: autoShowUp;
+    animation-timeline: view();
+}
+@keyframes autoShowUp {
+    from {
+        opacity: 1;
+        transform: matrix(200px) scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: matrix(0) scale(2);
+    }
+}
+.spin {
+    /* margin-top: 8%; */
+    margin-top: 10%;
+    animation-name: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.STARTLEFT {
+    animation-name: StartFromLeft;
+    animation-duration: 1s;
+    animation: StartFromLeft 2s;
+    animation-timeline: view();
+}
+@keyframes StartFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.STARTRIGHT {
+    animation-name: StartFromRight;
+    animation-duration: 1s;
+    animation-timeline: view();
+}
+@keyframes StartFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.auto-show {
+    animation-name: AutoDisplay;
+}
+@keyframes AutoDisplay {
+    from {
+        opacity: 0.2;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* footer */
+#footer {
+    background-color: rgba(0, 0, 0, 0.956);
+}
+#footer .nothailai {
+    color: grey;
+    text-decoration: none;
+    font-size: 12px;
+}
+#footer .hailai {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.contentabove {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+.contentabove .highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contentabove .help {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contentabove .about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contentabove .extra-contact i {
+    font-size: 30px;
+}
+.contentabove .extra-contact {
+    display: flex;
+    gap: 18px;
+}
+.contentbelow .address {
+    display: flex;
+    gap: 10px;
+    padding-left: 50px;
+}
+.address .address .locate {
+    display: flex;
+}
+.contentbelow p {
+    color: grey;
+    font-size: 12px;
+}
+.nike p {
+    padding-top: 2.2%;
+}
+.contentbelow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding-bottom: 1.5%;
+}
+.fourth {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgb(68, 7, 7);
+}
+#fourth-part img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    filter: brightness(0);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#fourth-part img:hover {
+    filter: brightness(1);
+}
+#fourth-part {
+    width: max-content;
+    display: flex;
+}
+.item {
+    margin-left: 5px;
+}
+#fith-part img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    filter: brightness(0);
+}
+#fith-part {
+    margin-top: 10%;
+    width: max-content;
+    display: flex;
+}

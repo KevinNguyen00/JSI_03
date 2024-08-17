@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="review.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link href="https://fonts.cdnfonts.com/css/candles" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/candles");
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="logo d-flex">
+                    <h1 style="letter-spacing: 2px; color: rgb(177, 30, 30)">PENNY</h1>
+                    <h1 style="letter-spacing: 2px; color: rgb(255, 255, 255)">WISE 2</h1>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a class="hover" href="/Homepage.html">Home</a></li>
+                        <li><a class="hover" href="#">About</a></li>
+                        <li><a class="hover" href="#">Service</a></li>
+                        <li><a class="hover" href="#">Contact</a></li>
+                        <li><a class="review" href="review.html">Review</a></li>
+                    </ul>
+                </div>
+                <div class="attendance d-flex">
+                    <div class="dropdown hidden">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="nguoidung" data-bs-toggle="dropdown" aria-expanded="false">Username</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="Profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" id="signout" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                    <a href="register.html" class="btn joinus">Join Us</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="above">
+                    <a href="#" onclick="showForm()" class="btn sharing">Share Your Thoughts!</a>
+                </div>
+                <div id="Depicts-container">
+                    <div class="card" style="width: 18rem">
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <div>
+                                <h5 class="name-user">NAME</h5>
+                                <p>Timestamp</p>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-heart" style="color: #fcfdb4"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right undisplayed">
+                    <form id="upload-form">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Filling your URL here!</label>
+                            <input type="url" class="form-control" id="input_image" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> Filling your Comment here!</label>
+                            <input type="text" class="form-control" id="input_content" />
+                        </div>
+
+                        <div class="btn">
+                            <button type="submit" id="nutdangbai" class="btn btn-outline-primary">Submit</button>
+                            <button onclick="hideForm()" class="btn btn-outline-danger">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script defer src="JS/config.js"></script>
+        <script defer src="/JS/check.js"></script>
+        <script defer src="JS/comment.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
